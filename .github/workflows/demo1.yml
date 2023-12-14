@@ -1,0 +1,8 @@
+name: hello-world #This is the name of the workflow
+on: push #This is the action on which this workflow is triggered, valus can be: https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
+jobs: #This is a list/dictionary of jobs
+  my-job: #Instance of job
+    runs-on: ubuntu-latest #Which system it runs on, instead of job
+    steps:
+      - name: my-step
+        run: echo "Hello World!"
